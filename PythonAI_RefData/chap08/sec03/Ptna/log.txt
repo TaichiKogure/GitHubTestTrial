@@ -1,0 +1,191 @@
+Ptna System Dialogue Log: 2016-07-01 19:07::43
+> じゃじゃじゃじゃーん
+ptna：Pattern> いま何時かなぁ
+> もう夜でしょ
+ptna：Pattern> あれはどうなった？
+> とんでもないことになったよ
+ptna：Pattern> じゃあこれ知ってる？
+> 何でも知ってるんだから
+ptna：Pattern> あれはどうなった？
+> って何？
+ptna：Pattern> いま何時かなぁ
+> 時は金なり
+ptna：Random> なんか眠くなっちゃった
+> 歯磨かなきゃ
+ptna：Random> きたきたきた
+> UFOか
+ptna：Random> 今日は暑いね
+> そうでもないんだが
+ptna：Repeat> そうでもないんだがってなに？
+> どうでもいいことっす
+ptna：Pattern> 顔洗った？
+> 今やろうと思ったのに！
+ptna：Random> 面倒くさーい
+> 手洗った？
+ptna：Repeat> 手洗った？ってなに？
+> バイバイキーン
+ptna：Pattern> バイバーイ
+> え？もうおしまい？
+ptna：Pattern> 手洗った？
+> これからだよ
+ptna：Repeat> これからだよってなに？
+> 話題変えようよ
+ptna：Pattern> あれはどうなった？
+> どうにもなってないよ
+ptna：Pattern> 歯磨かなきゃ
+Ptna System Dialogue Log: 2016-07-05 13:07::18
+> 太陽が輝いてる
+ptna：Pattern> ヘビメタ好き？
+Ptna System Dialogue Log: 2016-07-05 13:07::52
+> お花がキレイ
+ptna：Pattern> キレイってホント！？ホントに！？
+Ptna System Dialogue Log: 2016-07-05 13:07::57
+> 自動車だ
+ptna：Pattern> もう夜でしょ
+Ptna System Dialogue Log: 2016-07-05 15:07::30
+> 太陽が輝いてる
+ptna：Random> お花がキレイ
+Ptna System Dialogue Log: 2016-07-05 15:07::50
+> 花がキレイ
+ptna：Random> え？もうおしまい？
+Ptna System Dialogue Log: 2016-07-05 15:07::14
+> 今日は晴れだ
+ptna：Pattern> しょんぼり
+Ptna System Dialogue Log: 2016-07-05 15:07::16
+> 今日は晴れだ
+ptna：Random> それな
+Ptna System Dialogue Log: 2016-07-05 15:07::30
+> 今日は晴れだ
+ptna：Pattern> 花がキレイ
+Ptna System Dialogue Log: 2016-07-05 15:07::54
+> 今日は晴れだ
+ptna：Repeat> 今日は晴れだってなに？
+Ptna System Dialogue Log: 2016-07-05 15:07::18
+> 今日は晴れだ
+ptna：Pattern> って何？
+Ptna System Dialogue Log: 2016-07-05 15:07::00
+> 今日は晴れだ
+ptna：Pattern> それはまずいよ
+Ptna System Dialogue Log: 2016-07-05 15:07::39
+> 今日は晴れだ
+ptna：Random> あたしってば
+Ptna System Dialogue Log: 2016-07-05 15:07::52
+> 今日は晴れだ
+ptna：Pattern> ちょーいいじゃん！
+Ptna System Dialogue Log: 2016-07-05 15:07::16
+> 今日は晴れだ
+ptna：Random> ヘビメタ好き？
+Ptna System Dialogue Log: 2016-07-05 16:07::44
+> 今日は晴れだ
+ptna：Pattern> え？もうおしまい？
+Ptna System Dialogue Log: 2016-07-05 16:07::40
+> 今日は晴れだ
+ptna：Pattern> スポーツって好き？
+Ptna System Dialogue Log: 2016-07-05 16:07::43
+> 今日は天気だ
+ptna：Repeat> 今日は天気だってなに？
+Ptna System Dialogue Log: 2016-07-05 16:07::08
+> 今日は晴れだ
+ptna：Pattern> 今日は晴れだ
+Ptna System Dialogue Log: 2016-07-05 16:07::15
+> 今日は晴れだ
+ptna：Pattern> 今日は晴れだ
+Ptna System Dialogue Log: 2016-07-07 20:07::30
+> お花畑にひまわりとタンポポとチューリップが咲いている
+ptna：Pattern> お花がキレイ
+Ptna System Dialogue Log: 2016-07-22 13:07::19
+> 久しぶりだね！
+ptna：Markov> だるい…
+> 熱でもあるの？
+ptna：Markov> とんでもないことになったよ
+> そんなに具合悪いなら寝てなきゃだめだよ
+ptna：Markov> おなかすいた
+> あったかいのがいいね、シチューとかさ
+ptna：Markov> そんなこと知らないもん
+> 例えばクリームシチューなんて体が温まっていいよ
+ptna：Markov> どうでもいいことっす
+> 布団かぶってしっかり寝なきゃ
+ptna：Markov> 例えばクリームシチューなんて体が温まっていいよ
+> テレビ見ちゃだめだよ
+ptna：Markov> ちょーいいじゃん！
+> ライブ行きたいな、ちょーノリノリのロックがいいな
+ptna：Markov> 何か忘れてることない？
+> あ、スマホの充電が切れる
+ptna：Markov> キレイってホント！？ホントに！？
+> 綺麗だなんて言ってません
+ptna：Markov> UFOか
+> 宇宙は広く果てしないのだ
+ptna：Markov> なんか眠くなっちゃった
+> 平均睡眠時間は8時間くらいかな
+ptna：Markov> 何でも知ってるんだから
+> おいおい、それはこっちのセリフだよ
+ptna：Markov> 話題変えようよ
+> 最近、小説にはまってるんだ
+ptna：Markov> お花がキレイ
+> 庭の花壇にチューリップが咲いてるよ
+ptna：Markov> お花畑にひまわりとタンポポとチューリップが咲いている
+Ptna System Dialogue Log: 2016-07-22 14:07::56
+> あなたはトークが好きなプログラムの女の子です
+ptna：Markov> ヘビメタ好き？
+> あなたはおしゃべりが好きなPythonのプログラムです
+ptna：Markov> ヘビメタ好き？
+> 私は牛丼が大好きなしがないプログラマーです
+ptna：Markov> 晴れたね
+Ptna System Dialogue Log: 2016-07-22 14:07::40
+> なるほど、トークが好きなプログラムの女の子なんだ
+ptna：Markov> ヘビメタ好き？
+> ヘビーなサウンドの重厚なロックが好きな青年です
+ptna：Markov> スポーツって好き？
+Ptna System Dialogue Log: 2016-07-22 14:07::08
+> ロックは好きかな？
+ptna：Markov> ヘビメタ好き？
+> そうか、ヘビーメタルが好きな女の子っていいよね
+ptna：Markov> ヘビーで重厚なロックが好きな女の子なんだ。Ptna System Dialogue Log: 2016-07-23 21:07::43
+> いやあだいぶ遅い時間になったね
+ptna：Markov> ロック好き？
+> ロック好きだよ
+ptna：Random> 歯磨かなきゃ
+> まだ早い時間だからロックの話しようよ
+ptna：Random> 例えばクリームシチューなんて体が温まっていいよ
+> 寝る前に食べると太るよ
+ptna：Template> 例えばクリームシチューなんて体が温まっていいよ
+> とってもお腹すいてるみたいだね
+ptna：Pattern> それな
+> やっぱり図星だ
+ptna：Pattern> とんでもないことになったよ
+> すでにシチュー食べてしまったとか？
+ptna：Template> やっほーシチュー
+> シチュー以外に好きな食べ物は何？
+ptna：Markov> あなたはトークが好きな女の子なんだ。
+> 女の子ではありません
+ptna> これからだよ
+> 何がはじまるの？
+ptna> 雨かもよ
+> こんなに晴れてるのに雨になるの？
+ptna> はあ晴れなのに
+> これから買い物に出かけようと思ったのに
+ptna> スポーツって好き？
+> スポーツは何でも好きだよ
+ptna> あなたはトークが好きな女の子なんだ。
+> いいえ、スポーツが好きな青年です
+ptna> あなたはトークが好きな女の子なんだ。
+> だから男なんだよ
+ptna> あなたはトークが好きなプログラムの女の子です
+> 牛丼とスポーツが好きなプログラマーの青年です
+ptna> スポーツは何でも好きだよ
+> なるほど、一緒だね
+ptna> どうにもなってないよ
+> そんなふうに言われると寂しいな
+ptna> あーあ
+> それはこっちのセリフじゃ！
+ptna> とんでもないことになったよ
+> 何が起きた
+ptna> あなたはお鍋大好き鍋パーティピーポー
+> お鍋食べたいの？
+ptna> 何でだよー
+> ときどき食べ物の話しているから
+ptna> そんなの食べ物だよ
+> 食いしん坊の女の子なんだね
+ptna> とんでもないことになったよ
+> 食べ過ぎた？
+ptna> テレビ面白かった

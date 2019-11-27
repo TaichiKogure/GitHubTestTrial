@@ -1,0 +1,136 @@
+Ptna System Dialogue Log: 2016-07-01 19:07::43
+> じゃじゃじゃじゃーん
+ptna：Pattern> いま何時かなぁ
+> もう夜でしょ
+ptna：Pattern> あれはどうなった？
+> とんでもないことになったよ
+ptna：Pattern> じゃあこれ知ってる？
+> 何でも知ってるんだから
+ptna：Pattern> あれはどうなった？
+> って何？
+ptna：Pattern> いま何時かなぁ
+> 時は金なり
+ptna：Random> なんか眠くなっちゃった
+> 歯磨かなきゃ
+ptna：Random> きたきたきた
+> UFOか
+ptna：Random> 今日は暑いね
+> そうでもないんだが
+ptna：Repeat> そうでもないんだがってなに？
+> どうでもいいことっす
+ptna：Pattern> 顔洗った？
+> 今やろうと思ったのに！
+ptna：Random> 面倒くさーい
+> 手洗った？
+ptna：Repeat> 手洗った？ってなに？
+> バイバイキーン
+ptna：Pattern> バイバーイ
+> え？もうおしまい？
+ptna：Pattern> 手洗った？
+> これからだよ
+ptna：Repeat> これからだよってなに？
+> 話題変えようよ
+ptna：Pattern> あれはどうなった？
+> どうにもなってないよ
+ptna：Pattern> 歯磨かなきゃ
+Ptna System Dialogue Log: 2016-07-05 13:07::18
+> 太陽が輝いてる
+ptna：Pattern> ヘビメタ好き？
+Ptna System Dialogue Log: 2016-07-05 13:07::52
+> お花がキレイ
+ptna：Pattern> キレイってホント！？ホントに！？
+Ptna System Dialogue Log: 2016-07-05 13:07::57
+> 自動車だ
+ptna：Pattern> もう夜でしょ
+Ptna System Dialogue Log: 2016-07-05 15:07::30
+> 太陽が輝いてる
+ptna：Random> お花がキレイ
+Ptna System Dialogue Log: 2016-07-05 15:07::50
+> 花がキレイ
+ptna：Random> え？もうおしまい？
+Ptna System Dialogue Log: 2016-07-05 15:07::14
+> 今日は晴れだ
+ptna：Pattern> しょんぼり
+Ptna System Dialogue Log: 2016-07-05 15:07::16
+> 今日は晴れだ
+ptna：Random> それな
+Ptna System Dialogue Log: 2016-07-05 15:07::30
+> 今日は晴れだ
+ptna：Pattern> 花がキレイ
+Ptna System Dialogue Log: 2016-07-05 15:07::54
+> 今日は晴れだ
+ptna：Repeat> 今日は晴れだってなに？
+Ptna System Dialogue Log: 2016-07-05 15:07::18
+> 今日は晴れだ
+ptna：Pattern> って何？
+Ptna System Dialogue Log: 2016-07-05 15:07::00
+> 今日は晴れだ
+ptna：Pattern> それはまずいよ
+Ptna System Dialogue Log: 2016-07-05 15:07::39
+> 今日は晴れだ
+ptna：Random> あたしってば
+Ptna System Dialogue Log: 2016-07-05 15:07::52
+> 今日は晴れだ
+ptna：Pattern> ちょーいいじゃん！
+Ptna System Dialogue Log: 2016-07-05 15:07::16
+> 今日は晴れだ
+ptna：Random> ヘビメタ好き？
+Ptna System Dialogue Log: 2016-07-05 16:07::44
+> 今日は晴れだ
+ptna：Pattern> え？もうおしまい？
+Ptna System Dialogue Log: 2016-07-05 16:07::40
+> 今日は晴れだ
+ptna：Pattern> スポーツって好き？
+Ptna System Dialogue Log: 2016-07-05 16:07::43
+> 今日は天気だ
+ptna：Repeat> 今日は天気だってなに？
+Ptna System Dialogue Log: 2016-07-05 16:07::08
+> 今日は晴れだ
+ptna：Pattern> 今日は晴れだ
+Ptna System Dialogue Log: 2016-07-05 16:07::15
+> 今日は晴れだ
+ptna：Pattern> 今日は晴れだ
+Ptna System Dialogue Log: 2016-07-07 20:07::30
+> お花畑にひまわりとタンポポとチューリップとカトレアとマーガレットが咲いている
+
+ptna：Pattern> お花がキレイ
+Ptna System Dialogue Log: 2016-07-07 20:07::36
+> お花畑にひまわりとタンポポとチューリップとカトレアとマーガレットが咲いている
+
+ptna：Pattern> お花がキレイ
+Ptna System Dialogue Log: 2016-07-07 20:07::30
+> お花畑にひまわりとタンポポとチューリップとカトレアとマーガレットが咲いている
+
+ptna：Pattern> お花畑にひまわりとタンポポとチューリップとカトレアとマーガレットが咲いている
+Ptna System Dialogue Log: 2016-07-07 20:07::10
+> お花畑にひまわりとタンポポとチューリップとカトレアとマーガレットが咲いている
+
+ptna：Pattern> お花畑にひまわりとタンポポとチューリップとカトレアとマーガレットが咲いている
+Ptna System Dialogue Log: 2016-07-07 20:07::08
+> お花畑にひまわりとタンポポとチューリップとカトレアとマーガレットが咲いている
+
+ptna：Pattern> お花畑にひまわりとタンポポとチューリップとカトレアとマーガレットが咲いている
+Ptna System Dialogue Log: 2016-07-07 20:07::20
+> お花畑にひまわりとタンポポとチューリップとカトレアとマーガレットが咲いている
+Ptna System Dialogue Log: 2016-07-18 11:07::23
+> やあ
+ptna：Template> 正直しんどい
+> 疲れてるの？
+ptna：Random> ヘビメタ好き？
+> まあね
+ptna：Random> お花がキレイ
+> お花もいいけどお腹すいた
+ptna：Repeat> お花もいいけどお腹すいたってなに？
+> パスタならカルボナーラがいいな
+ptna：Template> パスタ？カルボナーラ？
+> カルボナーラ最高！
+ptna：Pattern> パスタならカルボナーラがいいな
+> パスタ食べたくなってきた
+ptna：Template> パスタでしょ！
+> 麺類が好きなんだね
+ptna：Template> 麺類と好きはもういいよ
+Ptna System Dialogue Log: 2016-10-05 12:10::18
+> 今日の映画は面白かった
+ptna：Pattern> じゃじゃじゃじゃーん
+Ptna System Dialogue Log: 2016-10-05 12:10::00
+Ptna System Dialogue Log: 2016-10-05 12:10::44

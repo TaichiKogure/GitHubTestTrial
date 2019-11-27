@@ -1,0 +1,86 @@
+Ptna System Dialogue Log: 2016-07-01 19:07::43
+> じゃじゃじゃじゃーん
+ptna：Pattern> いま何時かなぁ
+> もう夜でしょ
+ptna：Pattern> あれはどうなった？
+> とんでもないことになったよ
+ptna：Pattern> じゃあこれ知ってる？
+> 何でも知ってるんだから
+ptna：Pattern> あれはどうなった？
+> って何？
+ptna：Pattern> いま何時かなぁ
+> 時は金なり
+ptna：Random> なんか眠くなっちゃった
+> 歯磨かなきゃ
+ptna：Random> きたきたきた
+> UFOか
+ptna：Random> 今日は暑いね
+> そうでもないんだが
+ptna：Repeat> そうでもないんだがってなに？
+> どうでもいいことっす
+ptna：Pattern> 顔洗った？
+> 今やろうと思ったのに！
+ptna：Random> 面倒くさーい
+> 手洗った？
+ptna：Repeat> 手洗った？ってなに？
+> バイバイキーン
+ptna：Pattern> バイバーイ
+> え？もうおしまい？
+ptna：Pattern> 手洗った？
+> これからだよ
+ptna：Repeat> これからだよってなに？
+> 話題変えようよ
+ptna：Pattern> あれはどうなった？
+> どうにもなってないよ
+ptna：Pattern> 歯磨かなきゃ
+Ptna System Dialogue Log: 2016-07-05 13:07::18
+> 太陽が輝いてる
+ptna：Pattern> ヘビメタ好き？
+Ptna System Dialogue Log: 2016-07-05 13:07::52
+> お花がキレイ
+ptna：Pattern> キレイってホント！？ホントに！？
+Ptna System Dialogue Log: 2016-07-05 13:07::57
+> 自動車だ
+ptna：Pattern> もう夜でしょ
+Ptna System Dialogue Log: 2016-07-05 15:07::30
+> 太陽が輝いてる
+ptna：Random> お花がキレイ
+Ptna System Dialogue Log: 2016-07-05 15:07::50
+> 花がキレイ
+ptna：Random> え？もうおしまい？
+Ptna System Dialogue Log: 2016-07-05 15:07::14
+> 今日は晴れだ
+ptna：Pattern> しょんぼり
+Ptna System Dialogue Log: 2016-07-05 15:07::16
+> 今日は晴れだ
+ptna：Random> それな
+Ptna System Dialogue Log: 2016-07-15 18:07::07
+> 春がきたね
+ptna：Pattern> いくらでも寝てられる
+Ptna System Dialogue Log: 2016-07-16 18:07::26
+> 雨かもよ
+ptna：Random> それいいじゃない
+Ptna System Dialogue Log: 2016-07-16 19:07::58
+> 雨かもよ
+ptna：Pattern> 雨降ってる
+Ptna System Dialogue Log: 2016-07-16 20:07::40
+> あ、自転車の鍵かけるの忘れた
+ptna：Pattern> 雨降っても乗ってるんだ！
+> 雨降っても平気なんだね
+ptna：Pattern> 明日は雨かねえ
+> 明日は雨でしょ
+ptna：Pattern> 明日は雨かねえ
+> だから雨だって！
+ptna：Random> あーあ
+> ま、雨でもいいじゃん
+ptna：Random> 春がきたね
+> そっちか！
+ptna：Pattern> 今日は晴れだ
+> あー何となく晴れだね
+ptna：Pattern> 今日は晴れだ
+> でも明日は雨だよ
+ptna：Pattern> 明日は雨かねえ
+> 雨だって教えてあげたのに
+ptna：Random> ま、雨でもいいじゃん
+> そうだね
+ptna：Random> それな
