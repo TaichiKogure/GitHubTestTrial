@@ -1,10 +1,3 @@
-import random
-import time
-import math
-import tkinter
-
-from tkinter import messagebox
-
 # リバーシ
 
 SPACE = 0
@@ -170,7 +163,23 @@ def move(self, position):
 # ーーーーーーーーーーーーーーーーーーーーーーーーー
 # ゲームクラス
 # ーーーーーーーーーーーーーーーーーーーーーーーーー
+class Game:
+    def __init__(self):
+        #ゲームの状態　０開始まち１対局中２対局終了
+        self.game_mode = 0
+        #　●　０プレイヤー１コンピュータ
+        self.black_player = 0
+        #　○　０プレイヤー１コンピュータ
+        self.white_player = 0
+        self.board = Board() #盤面作成
+        self.board.init_board() #盤面の初期化
 
+    #対局開始
+    def start(self, _black_player, _white_player):
+        self.black_player = _black_player
+        self.white_player = _white_player
+        self.game_mode = 1 #ゲームの状態：対局中
+        self.board.init_board() #盤面の初期化
 
 
 
