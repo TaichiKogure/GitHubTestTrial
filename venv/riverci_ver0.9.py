@@ -41,109 +41,107 @@ class Board:
     DIR = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]]
 
     def __init__(self):
-    # 盤面、8×8の2次元リストを生成
-    self.board = \
-        [[SPACE for i in range(8)] for j in range(8)]
-    self.turn = BLACK  # 手番
-    self.move_num = 1  # 手数
+        # 盤面、8×8の2次元リストを生成
+        self.board = \
+            [[SPACE for i in range(8)] for j in range(8)]
+        self.turn = BLACK  # 手番
+        self.move_num = 1  # 手数
 
     # 盤面の初期化(初期配置）
     def init_board(self):
-    for y in range(8):
-        for x in range(8):
-            self.board[y][x] = SPACE
-    self.board[3][3] = WHITE
-    self.board[3][4] = BLACK
-    self.board[4][3] = BLACK
-    self.board[4][4] = WHITE
+        for y in range(8):
+            for x in range(8):
+                self.board[y][x] = SPACE
+        self.board[3][3] = WHITE
+        self.board[3][4] = BLACK
+        self.board[4][3] = BLACK
+        self.board[4][4] = WHITE
 
-    self.turn = BLACK  # 手番
-    self.move_num = 1  # 手数
+        self.turn = BLACK  # 手番
+        self.move_num = 1  # 手数
 
-# 白黒の石数をタプルで返す
+    # 白黒の石数をタプルで返す
     def get_discs(self):
-    black_discs = 0
-    white_discs = 0
-    for y in range(8):
-        for x in range(8):
-            disc = self.board[y][x]
-            if disc == BLACK:
-                black_discs += 1
-            elif disc == WHITE:
-                white_discs += 1
-    return (black_discs, white_discs)
+        black_discs = 0
+        white_discs = 0
+        for y in range(8):
+            for x in range(8):
+                disc = self.board[y][x]
+                if disc == BLACK:
+                    black_discs += 1
+                elif disc == WHITE:
+                    white_discs += 1
+        return (black_discs, white_discs)
 
-# 指定のマスに石は打てるか
+    # 指定のマスに石は打てるか
     def is_movable(self, position):
-    # 空きでなければ打てない
-    if self.board[position.y][position.x] != SPACE:
-        return False
+        # 空きでなければ打てない
+        if self.board[position.y][position.x] != SPACE:
+            return False
 
-    # 各方向に石をひっくり返せるか？
-    for dir in Board.DIR:
-        y = position.y + dir[0]
-        x = position.x + dir[1]
-        if y >= 0 and x >= 0 and y < 8 and x < 8 and self.board[y][x] == -self.turn:
-            # 隣が相手の石
-            y += dir[0]
-            x += dir[1]
-            while y >= 0 and x >= 0 and y < 8 and \
-                    x < 8 and self.board[y][x] == -self.turn:
+        # 各方向に石をひっくり返せるか？
+        for dir in Board.DIR:
+            y = position.y + dir[0]
+            x = position.x + dir[1]
+            if y >= 0 and x >= 0 and y < 8 and x < 8 and self.board[y][x] == -self.turn:
+                # 隣が相手の石
                 y += dir[0]
                 x += dir[1]
-            if y >= 0 and x >= 0 and y < 8 and x < 8 \
-                    and self.board[y][x] == self.turn:
-                return True
-
-    return False
-
-
-# 石を打てるマスのリストを返す
-    def get_move_list(self):
-    move_list = []
-    for y in range(8):
-        for x in range(8):
-            if self.board[y][x] == SPACE:
-                position = Position(y, x)
-                if self.is_movable(position):
-                    move_list.append(position)
-    return move_list
-
-
-# 局面をすすめる
-    def move(self, position):
-    # 石を打つ
-    self.board[position.y][position.x] = self.turn
-
-    # 石をひっくり返す
-    # 各方向に石をひっくり返せるか調べる
-    for dir in Board.DIR:
-        y = position.y + dir[0]
-        x = position.x + dir[1]
-        if y >= 0 and x >= 0 and y < 8 and x < 8 \
-                and self.board[y][x] == -self.turn:
-            # 隣が相手の石
-            y += dir[0]
-            x += dir[1]
-            while y >= 0 and x >= 0 and y < 8 and \
-                    x < 8 and self.board[y][x] == -self.turn:
-                y += dir[0]
-                x += dir[1]
-            if y >= 0 and x >= 0 and y < 8 and x < 8 \
-                    and self.board[y][x] == self.turn:
-                # この方向は返せる
-                # 1マス戻る
-                y -= dir[0]
-                x -= dir[1]
-                # 戻りながら返す
                 while y >= 0 and x >= 0 and y < 8 and \
                         x < 8 and self.board[y][x] == -self.turn:
-                    self.board[y][x] = self.turn
+                    y += dir[0]
+                    x += dir[1]
+                if y >= 0 and x >= 0 and y < 8 and x < 8 \
+                        and self.board[y][x] == self.turn:
+                    return True
+
+        return False
+
+    # 石を打てるマスのリストを返す
+    def get_move_list(self):
+        move_list = []
+        for y in range(8):
+            for x in range(8):
+                if self.board[y][x] == SPACE:
+                    position = Position(y, x)
+                    if self.is_movable(position):
+                        move_list.append(position)
+        return move_list
+
+    # 局面をすすめる
+    def move(self, position):
+        # 石を打つ
+        self.board[position.y][position.x] = self.turn
+
+        # 石をひっくり返す
+        # 各方向に石をひっくり返せるか調べる
+        for dir in Board.DIR:
+            y = position.y + dir[0]
+            x = position.x + dir[1]
+            if y >= 0 and x >= 0 and y < 8 and x < 8 \
+                    and self.board[y][x] == -self.turn:
+                # 隣が相手の石
+                y += dir[0]
+                x += dir[1]
+                while y >= 0 and x >= 0 and y < 8 and \
+                        x < 8 and self.board[y][x] == -self.turn:
+                    y += dir[0]
+                    x += dir[1]
+                if y >= 0 and x >= 0 and y < 8 and x < 8 \
+                        and self.board[y][x] == self.turn:
+                    # この方向は返せる
+                    # 1マス戻る
                     y -= dir[0]
                     x -= dir[1]
+                    # 戻りながら返す
+                    while y >= 0 and x >= 0 and y < 8 and \
+                            x < 8 and self.board[y][x] == -self.turn:
+                        self.board[y][x] = self.turn
+                        y -= dir[0]
+                        x -= dir[1]
 
-    self.turn = -self.turn  # 手番を変更
-    self.move_num += 1  # 手数を増やす
+        self.turn = -self.turn  # 手番を変更
+        self.move_num += 1  # 手数を増やす
 
     # パスする
     def move_pass(self):
@@ -171,6 +169,7 @@ class Board:
                 return True
 
         return False
+
 
 # ーーーーーーーーーーーーーーーーーーーーーーーーー
 # ゲームクラス
@@ -219,7 +218,7 @@ class Game:
                 self.black_player == 1 or \
                 self.board.turn == WHITE and \
                 self.white_player == 1:
-                return True
+            return True
         return False
 
         # 次の手番がコンピュータならAIに指し手を選択させる。
@@ -274,16 +273,16 @@ def draw_board():
                     (y + 1) * CELL_PX_SIZE - 4, fill=color)
 
         # 枠を描画
-    for x in range(8):
-        canvas_board.create_line(x * CELL_PX_SIZE, \
-                                 0, x * CELL_PX_SIZE, BOARD_PX_SIZE, \
-                                 fill="black", width=1)
+        for x in range(8):
+            canvas_board.create_line(x * CELL_PX_SIZE, \
+                                     0, x * CELL_PX_SIZE, BOARD_PX_SIZE, \
+                                     fill="black", width=1)
         for y in range(8):
             canvas_board.create_line(0, y * CELL_PX_SIZE, \
                                      BOARD_PX_SIZE, y * CELL_PX_SIZE, \
                                      fill="black", width=1)
 
-    canvas_board.update()
+        canvas_board.update()
 
 
 # メッセージ表示
