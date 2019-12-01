@@ -397,9 +397,11 @@ black_rdo1.place(x=160, y=4)
 white_label = tkinter.Label(text=u"後手○")
 white_label.place(x=16, y=24)
 white_var = tkinter.IntVar()
-white_rdo0 = tkinter.Radiobutton(root, value=0, variable=black_var, text=u"プレイヤー")
+white_rdo0 = tkinter.Radiobutton(root, value=0, variable=white_var, text=u"プレイヤー")
+
 white_rdo0.place(x=70, y=24)
-white_rdo1 = tkinter.Radiobutton(root, value=1, variable=black_var, text=u"コンピュータ")
+white_rdo1 = tkinter.Radiobutton(root, value=1, variable=white_var, text=u"コンピュータ")
+
 white_rdo1.place(x=160, y=24)
 
 # 対局開始ボタンを設置
