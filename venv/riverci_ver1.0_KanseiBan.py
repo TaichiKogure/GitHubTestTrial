@@ -71,7 +71,7 @@ class Board:
                     black_discs += 1
                 elif disc == WHITE:
                     white_discs += 1
-        return (black_discs, white_discs)
+        return black_discs, white_discs
 
     # 指定のマスに石は打てるか
     def is_movable(self, position):
@@ -83,15 +83,14 @@ class Board:
         for dir in Board.DIR:
             y = position.y + dir[0]
             x = position.x + dir[1]
-            if y >= 0 and x >= 0 and y < 8 and x < 8 and self.board[y][x] == -self.turn:
+            if 0 <= y < 8 and 0 <= x < 8 and self.board[y][x] == -self.turn:
                 # 隣が相手の石
                 y += dir[0]
                 x += dir[1]
-                while y >= 0 and x >= 0 and y < 8 and \
-                        x < 8 and self.board[y][x] == -self.turn:
+                while 0 <= y < 8 and 0 <= x < 8 and self.board[y][x] == -self.turn:
                     y += dir[0]
                     x += dir[1]
-                if y >= 0 and x >= 0 and y < 8 and x < 8 \
+                if 0 <= y < 8 and 0 <= x < 8 \
                         and self.board[y][x] == self.turn:
                     return True
 
@@ -118,24 +117,22 @@ class Board:
         for dir in Board.DIR:
             y = position.y + dir[0]
             x = position.x + dir[1]
-            if y >= 0 and x >= 0 and y < 8 and x < 8 \
+            if 0 <= y < 8 and 0 <= x < 8 \
                     and self.board[y][x] == -self.turn:
                 # 隣が相手の石
                 y += dir[0]
                 x += dir[1]
-                while y >= 0 and x >= 0 and y < 8 and \
-                        x < 8 and self.board[y][x] == -self.turn:
+                while 0 <= y < 8 and 0 <= x < 8 and self.board[y][x] == -self.turn:
                     y += dir[0]
                     x += dir[1]
-                if y >= 0 and x >= 0 and y < 8 and x < 8 \
+                if 0 <= y < 8 and 0 <= x < 8 \
                         and self.board[y][x] == self.turn:
                     # この方向は返せる
                     # 1マス戻る
                     y -= dir[0]
                     x -= dir[1]
                     # 戻りながら返す
-                    while y >= 0 and x >= 0 and y < 8 and \
-                            x < 8 and self.board[y][x] == -self.turn:
+                    while 0 <= y < 8 and 0 <= x < 8 and self.board[y][x] == -self.turn:
                         self.board[y][x] = self.turn
                         y -= dir[0]
                         x -= dir[1]
@@ -275,7 +272,7 @@ def draw_board():
         # 枠を描画
         for x in range(8):
             canvas_board.create_line(x * CELL_PX_SIZE, \
-                                     0, x * CELL_PX_SIZE, BOARD_PX_SIZE, \
+                                     0, x * CELL_PX_SIZE, BOARD_PX_SIZE,
                                      fill="black", width=1)
         for y in range(8):
             canvas_board.create_line(0, y * CELL_PX_SIZE, \
@@ -348,7 +345,7 @@ def click_board(event):
     y = math.floor(event.y / CELL_PX_SIZE)
     x = math.floor(event.x / CELL_PX_SIZE)
     position = Position(y, x)
-    if game.board.is_movable(position) == False:
+    if not game.board.is_movable(position):
         messagebox.showinfo(u"", u"そこには打てません")
         return
 
