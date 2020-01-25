@@ -42,8 +42,7 @@ class Board:
 
     def __init__(self):
     # 盤面、8×8の2次元リストを生成
-    self.board = \
-        [[SPACE for i in range(8)] for j in range(8)]
+    self.board = [[SPACE for i in range(8)] for j in range(8)]
     self.turn = BLACK  # 手番
     self.move_num = 1  # 手数
 
