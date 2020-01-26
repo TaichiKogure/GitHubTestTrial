@@ -14,3 +14,6 @@ plt.grid()
 plt.show()
 
 # %%
+
+
+# %%
