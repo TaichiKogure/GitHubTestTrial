@@ -4,14 +4,14 @@ import pybamm
 model = pybamm.lithium_ion.DFN()
 sim = pybamm.Simulation(model)
 sim.solve([0, 3600])
-# sim.plot()
+sim.plot()
 
 # %%
-# models = [
-#     pybamm.lithium_ion.SPM(),
-#     pybamm.lithium_ion.SPMe(),
-#     pybamm.lithium_ion.DFN(),
-# ]
+models = [
+    pybamm.lithium_ion.SPM(),
+    pybamm.lithium_ion.SPMe(),
+    pybamm.lithium_ion.DFN(),
+]
 
 # #モデル違いでカーブ形状がどのように変わるかを計算して比較する．
 
