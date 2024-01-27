@@ -4,39 +4,39 @@ import pybamm
 model = pybamm.lithium_ion.DFN()
 sim = pybamm.Simulation(model)
 sim.solve([0, 3600])
-# sim.plot()
+sim.plot()
 
-# %%
-# models = [
-#     pybamm.lithium_ion.SPM(),
-#     pybamm.lithium_ion.SPMe(),
-#     pybamm.lithium_ion.DFN(),
-# ]
-
-# #モデル違いでカーブ形状がどのように変わるかを計算して比較する．
-
-# sims = []
-# for model in models:
-#     sim = pybamm.Simulation(model)
-#     sim.solve([0, 3600])
-#     sims.append(sim)
+#%%
+models = [
+    pybamm.lithium_ion.SPM(),
+    pybamm.lithium_ion.SPMe(),
+    pybamm.lithium_ion.DFN(),
+]
 #
-# pybamm.dynamic_plot(sims, time_unit="seconds")
+#モデル違いでカーブ形状がどのように変わるかを計算して比較する．
 #
-# model = pybamm.lithium_ion.DFN()
-# sim = pybamm.Simulation(model)
-# sim.solve([0, 3600])
+sims = []
+for model in models:
+    sim = pybamm.Simulation(model)
+    sim.solve([0, 3600])
+    sims.append(sim)
 
-##見たい部分だけの情報をプロットしてみる．
+pybamm.dynamic_plot(sims, time_unit="seconds")
 
-# model.variable_names()
-# model.variables.search("electrolyte")
-# output_variables = ["Terminal voltage [V]"]
-# sim.plot(output_variables=output_variables)
-# output_variables = ["Electrolyte concentration [mol.m-3]", "Terminal voltage [V]"]
-# sim.plot(output_variables=output_variables)
-# sim.plot([["Electrode current density", "Electrolyte current density"], "Terminal voltage [V]"])
-
+model = pybamm.lithium_ion.DFN()
+sim = pybamm.Simulation(model)
+sim.solve([0, 3600])
+#
+#見たい部分だけの情報をプロットしてみる．
+#
+model.variable_names()
+model.variables.search("electrolyte")
+output_variables = ["Terminal voltage [V]"]
+sim.plot(output_variables=output_variables)
+output_variables = ["Electrolyte concentration [mol.m-3]", "Terminal voltage [V]"]
+sim.plot(output_variables=output_variables)
+sim.plot([["Electrode current density", "Electrolyte current density"], "Terminal voltage [V]"])
+#
 
 # %%
 # yBaMM has a number of in-built parameter sets (check the list here), which can be selected doing
