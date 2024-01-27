@@ -1,20 +1,21 @@
 # %%
 import pybamm
 
+#%%
 model = pybamm.lithium_ion.DFN()
 sim = pybamm.Simulation(model)
 sim.solve([0, 3600])
 sim.plot()
 
-#%%
+# %%
 models = [
     pybamm.lithium_ion.SPM(),
     pybamm.lithium_ion.SPMe(),
     pybamm.lithium_ion.DFN(),
 ]
-#
-#モデル違いでカーブ形状がどのように変わるかを計算して比較する．
-#
+
+# #モデル違いでカーブ形状がどのように変わるかを計算して比較する．
+
 sims = []
 for model in models:
     sim = pybamm.Simulation(model)
@@ -26,9 +27,11 @@ pybamm.dynamic_plot(sims, time_unit="seconds")
 model = pybamm.lithium_ion.DFN()
 sim = pybamm.Simulation(model)
 sim.solve([0, 3600])
-#
-#見たい部分だけの情報をプロットしてみる．
-#
+
+##見たい部分だけの情報をプロットしてみる．
+
+#%%
+
 model.variable_names()
 model.variables.search("electrolyte")
 output_variables = ["Terminal voltage [V]"]
@@ -36,7 +39,7 @@ sim.plot(output_variables=output_variables)
 output_variables = ["Electrolyte concentration [mol.m-3]", "Terminal voltage [V]"]
 sim.plot(output_variables=output_variables)
 sim.plot([["Electrode current density", "Electrolyte current density"], "Terminal voltage [V]"])
-#
+
 
 # %%
 # yBaMM has a number of in-built parameter sets (check the list here), which can be selected doing
@@ -58,25 +61,25 @@ parameter_values.search("electrolyte")
 # %%
 # 電解液のパラメータこんなのはいってた
 
-# import matplotlib.pyplot as plt
-# import numpy as np
+import matplotlib.pyplot as plt
+import numpy as np
 
-# c_e = np.linspace(0.01, 30, 100)
-# sigma_e = (0.1297 * (c_e / 1000) ** 3 - 2.51 * (c_e / 1000) ** 1.5 + 3.329 * (c_e / 1000))
-# D_c_e = 8.794e-11 * (c_e / 1000) ** 2 - 3.972e-10 * (c_e / 1000) + 4.862e-10
-# plt.plot(c_e, sigma_e)
-# plt.plot(c_e, D_c_e)
-# plt.show()
+c_e = np.linspace(0.01, 30, 100)
+sigma_e = (0.1297 * (c_e / 1000) ** 3 - 2.51 * (c_e / 1000) ** 1.5 + 3.329 * (c_e / 1000))
+D_c_e = 8.794e-11 * (c_e / 1000) ** 2 - 3.972e-10 * (c_e / 1000) + 4.862e-10
+plt.plot(c_e, sigma_e)
+plt.plot(c_e, D_c_e)
+plt.show()
 
 # %%
 
 # To run a simulation with this parameter set, we can proceed
 # as usual but passing the parameters as a keyword argument
 
-#model = pybamm.lithium_ion.DFN()
-# sim = pybamm.Simulation(model, parameter_values=parameter_values)
-# sim.solve([0, 3600])
-# sim.plot()
+model = pybamm.lithium_ion.DFN()
+sim = pybamm.Simulation(model, parameter_values=parameter_values)
+sim.solve([0, 3600])
+sim.plot()
 
 #%%
 #You can implement drive cycles importing the dataset and creating an interpolant to pass as the current function.
@@ -127,3 +130,11 @@ sim.plot(["Current [A]", "Terminal voltage [V]"])
 #%%
 
 # Tutorial 5
+import pybamm
+import os
+
+parameter_values = pybamm.ParameterValues("Chen2020")
+model = pybamm.lithium_ion.DFN()
+sim = pybamm.Simulation(model, parameter_values=parameter_values)
+sim.solve([0, 3600])
+sim.plot()
